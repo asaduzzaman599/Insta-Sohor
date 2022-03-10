@@ -77,6 +77,34 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+
+        <section class="container mt-4">
+            <h3> Special blogs</h3>
+            
+            <article class="w-100 p-3 my-5 shadow rounded">
+                <h4>What does Javascript event loop do?</h4>
+                <p class="mt-2">Javascript use stack and queue for execute code. there will some code which will work synchronously and asynchronously.  Javascript use stack to execute code one by one. When any code take lots of time or any chance to block the thread those code will pop out from the stack untill the code ready to execute and clear the stack for execute next code. After finished stack code execution event loop check the stack. If the stack is empty then event loop check queue. If any code available in queue then event loop push code from queue first to last one by one to the stack for execute those code. Event loop only push code from queue to stack when stack is empty and the queue is not empty. </p>
+            </article>
+
+            
+            <article class="w-100 p-3 my-5 shadow-lg rounded">
+                <h4>Difference between local storage and session storage?</h4>
+                
+                    <p class="mt-2">Local storage data in browser has no time limitation data never expires if we don't clear manually or uninstall the browser.But in session storage if we close the browser then the session storage will be cleared.</p>
+                    
+                    <p>Local storage is create only one and every time access same storage for same website if we open multiple time from multiple tabs.  But s session storage only exist for the current tab of the browser.</p>
+                    
+                    <p>Local storage data remain same if we close the website tab and open the website again. But if we close the tab of website then session storage data will be cleared also previous data will be vanished.</p>
+
+                    <p>Only one storage also can be created possible by a website and can get access every time from that storage for browser's life in local storage. But in session storage every time new session storage created for particular website and tab. </p>
+                
+            </article>
+            <article class="w-100 p-3 my-5 shadow-lg rounded">
+                <h4>How does Javascript Works?</h4>
+                <p class="mt-2">Javascript is high level programming language . it takes high level language and covert it in mechine language. Javascript excecute code line by line but one line execute at a time from top to bottom because it is interpreted language. To execute code more faster some browser take help from javascript engine like v8 which is used just in time compailation to compiled the code and make code optimized and convert it in bytecode. Javascript use stack and queue to execute code and handle synchronously and asynchronously.  </p>
+            </article>
+
+        </section>
         <footer></footer>
 
         <!-- add javascript  file  -->
