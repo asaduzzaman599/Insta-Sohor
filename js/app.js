@@ -146,7 +146,8 @@ const showPosts = (posts) => {
 const displayLikedPosts = () => {
     const likedPosts = getLikedPosts();
     const likedTab = document.getElementById( "liked" );
-    likedTab.textContent = '';
+    // likedTab.textContent = '';
+    likedTab.innerHTML=`<h1>Liked posts</h1>`;
     likedPosts.forEach((post) => {
         const div = createPost(post);
         likedTab.appendChild(div);
@@ -157,6 +158,7 @@ const displayReportedPosts = () => {
     const reportedPosts = getReportedPosts();
     const reportTab = document.getElementById( "reported" );
     reportTab.textContent = '';
+    reportTab.innerHTML=`<h1>Reported posts</h1>`;
     
     reportedPosts.forEach((post) => {
         const div = createPost(post);
