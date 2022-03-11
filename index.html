@@ -78,9 +78,10 @@
             </div>
         </main>
 
-        <section class="container mt-4">
-            <h3> Special blogs</h3>
-            
+        <section class="container mt-5 mx-auto p-3 blogs ">
+            <hr>
+            <h3 class=""> Question & Answer Blogs</h3>
+            <hr>
             <article class="w-100 p-3 my-5 shadow rounded">
                 <h4>What does Javascript event loop do?</h4>
                 <p class="mt-2">Javascript use stack and queue for execute code. there will some code which will work synchronously and asynchronously.  Javascript use stack to execute code one by one. When any code take lots of time or any chance to block the thread those code will pop out from the stack untill the code ready to execute and clear the stack for execute next code. After finished stack code execution event loop check the stack. If the stack is empty then event loop check queue. If any code available in queue then event loop push code from queue first to last one by one to the stack for execute those code. Event loop only push code from queue to stack when stack is empty and the queue is not empty. </p>
